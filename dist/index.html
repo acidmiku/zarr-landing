@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#09080e">
+  <meta name="description" content="Movies, series, anime, music. Zarr brings discovery, downloads, and your collection together in one self-hosted media archive.">
+  <title>Zarr — Collect what moves you.</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preload" href="assets/display.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/body.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="nav wrap">
+    <a class="brand" href="#" aria-label="Zarr home"><img src="assets/favicon.svg" alt="" width="32" height="32"><span>ZARR</span></a>
+    <nav aria-label="Main navigation"><a href="#archive">The archive</a><a href="#features">What it does</a><a href="#start">Get started</a></nav>
+    <div class="nav-actions"><button class="motion-toggle" type="button" aria-label="Pause animations" aria-pressed="false" title="Pause animations"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14M16 5v14"/></svg></button><a class="github-link" href="https://github.com/acidmiku/zarr" target="_blank" rel="noopener">GitHub <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 19c-4.3 1.3-4.3-2-6-2m12 5v-3.9c0-1.1-.4-1.7-.8-2 2.7-.3 5.6-1.3 5.6-6.1A4.8 4.8 0 0 0 18.5 6a4.5 4.5 0 0 0-.1-3S17.3 2.7 15 4a13 13 0 0 0-6 0C6.7 2.7 5.6 3 5.6 3a4.5 4.5 0 0 0-.1 3A4.8 4.8 0 0 0 4.2 9c0 4.8 2.9 5.8 5.6 6.1-.4.3-.8 1-.8 2V22"/></svg></a></div>
+  </header>
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-light" aria-hidden="true"></div>
+      <img class="hero-still" src="assets/neon-poster.png" alt="" aria-hidden="true">
+      <video class="hero-motion" src="assets/neon-loop.mp4" poster="assets/neon-poster.png" data-motion autoplay muted playsinline loop preload="metadata" aria-hidden="true"></video>
+      <div class="hero-grid" aria-hidden="true"></div>
+      <div class="hero-copy wrap">
+        <h1 id="hero-title"><span>COLLECT WHAT</span><span class="iridescent">MOVES YOU.</span></h1>
+        <p>Movies. Series. Anime. Music.<br>One self-hosted archive for everything you’re into.</p>
+        <div class="hero-actions"><a class="button primary" href="#start">Make it yours</a><a class="button secondary" href="#archive"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 11 7-11 7z"/></svg>Meet the archive</a></div>
+        <div class="hero-footnote">Open source. Yours to run. Yours to keep.</div>
+      </div>
+      <div class="stage wrap" id="archive">
+        <div class="stage-glow" aria-hidden="true"></div>
+        <img class="floating-poster poster-a" src="assets/chainsaw.jpg" alt="" aria-hidden="true">
+        <img class="floating-poster poster-b" src="assets/your-name.jpg" alt="" aria-hidden="true">
+        <div class="screen-shell" data-tilt>
+          <div class="screen-top"><span class="window-marks" aria-hidden="true"><i></i><i></i><i></i></span><span id="screen-route">Zarr / Collection</span><button class="expand-screen" type="button" aria-label="Expand product screenshot"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 3H3v5m13-5h5v5M3 16v5h5m13-5v5h-5"/></svg></button></div>
+          <button class="screen-image-button" type="button" aria-label="View full Collection screenshot"><img id="product-screen" src="assets/collection.jpg" alt="Zarr's running Collection page with Serial Experiments Lain, Blade Runner 2049, and Dune: Part Two" width="1600" height="1100" fetchpriority="high"></button>
+          <div class="screen-reflection" aria-hidden="true"></div>
+        </div>
+        <div class="shot-controls">
+          <div class="shot-tabs" role="tablist" aria-label="Product screenshots"><button role="tab" id="tab-collection" aria-selected="true" aria-controls="shot-description" data-shot="collection">Collection</button><button role="tab" id="tab-discover" aria-selected="false" aria-controls="shot-description" data-shot="discover" tabindex="-1">Discover</button><button role="tab" id="tab-anime" aria-selected="false" aria-controls="shot-description" data-shot="anime" tabindex="-1">Anime</button></div>
+          <p id="shot-description" role="tabpanel" aria-labelledby="tab-collection">One view. Your whole collection.</p>
+        </div>
+      </div>
+    </section>
+    <div class="media-rail" aria-hidden="true"><div class="rail-track"><span>MOVIES</span><i>✳</i><span>SERIES</span><i>✳</i><span>ANIME</span><i>✳</i><span>MUSIC</span><i>✳</i><span>MOVIES</span><i>✳</i><span>SERIES</span><i>✳</i><span>ANIME</span><i>✳</i><span>MUSIC</span><i>✳</i></div></div>
+    <section class="worlds wrap" id="features">
+      <div class="section-heading reveal"><h2>A GOOD COLLECTION<br>HAS <span class="pink">NO GENRE.</span></h2><p>Cult films. Entire seasons. Anime deep cuts. Albums on repeat. Keep all of it together, without losing what makes each one different.</p></div>
+      <div class="poster-wall reveal" aria-label="Artwork discovered through Zarr"><div class="wall-perspective"><img src="assets/resident-evil.jpg" alt="Resident Evil artwork" loading="lazy"><img src="assets/ghost.jpg" alt="Ghost in the Shell artwork" loading="lazy"><img src="assets/obsession.jpg" alt="Obsession artwork" loading="lazy"><img src="assets/chainsaw.jpg" alt="Chainsaw Man: Reze Arc artwork" loading="lazy"><img src="assets/uprising.jpg" alt="The Uprising artwork" loading="lazy"><img src="assets/your-name.jpg" alt="Your Name artwork" loading="lazy"></div><div class="wall-caption"><span>FOUR KINDS OF MEDIA.</span><strong>ONE PLACE TO OBSESS.</strong></div></div>
+      <div class="feature-row reveal"><article><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m16 16 5 5"/></svg><h3>Follow your curiosity.</h3><p>Search TMDB, AniList, and MusicBrainz. Go from “what’s that called?” to your next favorite.</p></article><article><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18v14H3zM7 5v14M17 5v14M3 10h4M3 14h4M17 10h4M17 14h4"/></svg><h3>Keep the whole story.</h3><p>Movies and series get their own workflows. Anime films and seasons stay distinct, too.</p></article><article><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="2"/><path d="M6 12a6 6 0 0 1 6-6m6 6a6 6 0 0 1-6 6"/></svg><h3>Give music a home.</h3><p>Artists, albums, and individual tracks. With quality profiles for FLAC, MP3, and AAC.</p></article></div>
+    </section>
+    <section class="quality-section wrap">
+      <div class="quality-copy reveal"><h2>GOOD TASTE.<br><span class="iridescent">HIGH STANDARDS.</span></h2><p>The right resolution. The right format. The release you actually want. Set your quality profiles and let Zarr do the sorting.</p></div>
+      <div class="quality-features reveal"><article><span aria-hidden="true">01</span><div><h3>Know why a release wins.</h3><p>Inspectable scores make your release preferences explicit.</p></div></article><article><span aria-hidden="true">02</span><div><h3>Give anime its own rules.</h3><p>Separate TRaSH profiles for anime films and series, with ranked quality groups and custom formats.</p></div></article><article><span aria-hidden="true">03</span><div><h3>Leave room for better.</h3><p>Automatically upgrade eligible anime releases until your quality and score targets are met.</p></div></article></div>
+    </section>
+    <section class="flow-section">
+      <div class="wrap"><div class="section-heading reveal"><h2>FROM “WANT IT”<br>TO <span class="pink">“GOT IT.”</span></h2><p>Discovery, release selection, transfers, and organization. A complete route from the next obsession to your own library.</p></div><div class="flow-diagram reveal"><article><span class="step-num">01</span><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m16 8-3 5-5 3 3-5z"/></svg><h3>Discover</h3><p>Find a title. Pick your profile.<br>Make room in your collection.</p></article><span class="flow-connector" aria-hidden="true"></span><article><span class="step-num">02</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m-5-5 5 5 5-5M4 16v5h16v-5"/></svg><h3>Download</h3><p>Usenet with SABnzbd.<br>Torrents with qBittorrent.</p></article><span class="flow-connector" aria-hidden="true"></span><article><span class="step-num">03</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4v16M9 7v13M14 5v15m4-16 4 16"/></svg><h3>Keep</h3><p>Track progress in real time.<br>Import and organize completed files.</p></article></div><div class="integration-line reveal"><span>CONNECTED TO THE GOOD STUFF</span><div><b>TMDB</b><b>AniList</b><b>MusicBrainz</b><b>SABnzbd</b><b>qBittorrent</b><b>OpenRouter</b></div></div></div>
+    </section>
+    <section class="assistant-section wrap"><div class="assistant-visual reveal"><button class="assistant-shot" type="button" data-open-shot="assistant" aria-label="View real Zarr assistant screenshot"><img src="assets/assistant.jpg" alt="The AI assistant in the running Zarr service" loading="lazy"></button><div class="spark" aria-hidden="true">✳</div></div><div class="assistant-copy reveal"><h2>FIND SOMETHING<br><span class="pink">STRANGER.</span></h2><p>Give the assistant your taste, your mood, or a wonderfully specific request. Get recommendations with context, powered by the OpenRouter model you choose.</p><p class="quiet">Rate what you love. Keep a history of your taste. Discover more of what makes it yours.</p><button class="text-button" type="button" data-open-shot="assistant">Meet your assistant <span>+</span></button></div></section>
+    <section class="ownership wrap reveal"><div class="ownership-word">YOURS.</div><div class="ownership-copy"><h2>RUN IT YOUR WAY.</h2><p>Self-hosted. Open source. MIT licensed.<br>Your archive lives on your machine, with connections and preferences managed in the UI.</p><a href="https://github.com/acidmiku/zarr" target="_blank" rel="noopener">Explore the source</a></div></section>
+    <section class="start-section wrap" id="start"><div class="start-copy reveal"><h2>YOUR NEXT<br><span class="iridescent">OBSESSION</span><br>STARTS HERE.</h2><p>Have Docker ready? Bring up Zarr and its bundled download clients, then make yourself at home.</p><a class="button secondary" href="https://github.com/acidmiku/zarr/blob/main/docs/installation.md" target="_blank" rel="noopener">Read the installation guide</a></div><div class="terminal reveal"><div class="terminal-top"><span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 5 7 7-7 7m9 0h7"/></svg>Quick start</span><button id="copy-install" type="button" aria-label="Copy installation commands"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="8" y="8" width="12" height="13" rx="1"/><path d="M16 8V3H3v13h5"/></svg><span>Copy</span></button></div><pre><code><span class="code-comment"># Your archive, in three commands.</span>
+<span class="code-dollar">$</span> git clone https://github.com/acidmiku/zarr.git
+<span class="code-dollar">$</span> cd zarr
+<span class="code-dollar">$</span> docker compose up -d --build</code></pre><div class="terminal-bottom"><p>Then open <a href="http://localhost:9876/" target="_blank" rel="noopener">localhost:9876</a></p><span>Zarr + SABnzbd + qBittorrent</span></div></div></section>
+    <section class="faq wrap reveal" aria-label="Questions"><details><summary>Does Zarr play my media?<span>+</span></summary><p>Zarr discovers, downloads, and organizes your media. Use your preferred media player to watch or listen to the files in your library.</p></details><details><summary>Can I bring an existing collection?<span>+</span></summary><p>Yes. Import existing files with metadata matching, and use library scans to reconcile media you already organized.</p></details><details><summary>Do I need to configure everything first?<span>+</span></summary><p>You can open the library immediately. Add metadata services, download connections, indexers, Usenet servers, and your AI provider through Quick start or Settings.</p></details></section>
+  </main>
+  <footer class="wrap"><div class="footer-top"><a class="brand" href="#" aria-label="Back to top">ZARR<span class="brand-slash">/</span></a><p>Collect what moves you.</p><div><a href="https://github.com/acidmiku/zarr" target="_blank" rel="noopener">GitHub</a><a href="https://github.com/acidmiku/zarr/blob/main/docs/usage.md" target="_blank" rel="noopener">Docs</a><a href="https://github.com/acidmiku/zarr/blob/main/LICENSE" target="_blank" rel="noopener">MIT License</a></div></div><div class="footer-word" aria-hidden="true">ZARR</div><div class="footer-bottom"><span>YOUR MEDIA. YOUR RULES.</span><span>v0.3.0 · Neon Archive</span></div></footer>
+  <dialog id="shot-dialog" aria-labelledby="dialog-title"><div class="dialog-top"><h2 id="dialog-title">Zarr / Collection</h2><button class="dialog-close" type="button" aria-label="Close screenshot"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 5 14 14M19 5 5 19"/></svg></button></div><img id="dialog-image" src="assets/collection.jpg" alt="Full Zarr Collection screenshot"><p id="dialog-caption">Captured from the running Zarr service.</p></dialog>
+  <div class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
