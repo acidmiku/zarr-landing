@@ -25,7 +25,7 @@ All product screenshots are real captures of the running service at http://127.0
 - `collection.jpg`: `/library`, with four actual titles added for capture
 - `discover.jpg`: live movie discovery
 - `anime.jpg`: live Ghost in the Shell search
-- `assistant.jpg`: actual OpenRouter-powered recommendation conversation
+- `assistant-covers.png`: user-supplied live screenshot of the current cult-film recommendation conversation, with covers verified in the running service (session 5)
 
 No fixture screenshots from Zarr's docs are used. The quality settings screenshot was removed from both the gallery and feature section at the user's request. Poster artwork was collected from the live service's image proxy. Fonts and the favicon reuse Zarr's own brand assets.
 

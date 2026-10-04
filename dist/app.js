@@ -3,7 +3,7 @@ const shots = {
   collection: { src:'assets/collection.jpg', name:'Collection', description:'One view. Your whole collection.', alt:'Real Zarr Collection with Serial Experiments Lain, Blade Runner 2049, and Dune: Part Two' },
   discover: { src:'assets/discover.jpg', name:'Discover', description:'The next obsession is out there.', alt:'Real Zarr movie discovery screen with live metadata and artwork' },
   anime: { src:'assets/anime.jpg', name:'Anime', description:'Films and series. Distinct by design.', alt:'Real Zarr search results for Ghost in the Shell' },
-  assistant: { src:'assets/assistant.jpg', name:'Assistant', description:'Recommendations from a real Zarr assistant conversation.', alt:'A real conversation with the Zarr AI assistant' }
+  assistant: { src:'assets/assistant-covers.png', name:'Assistant', description:'Recommendations from a real Zarr assistant conversation.', alt:'Real Zarr cult-film recommendations with Repo Man, Donnie Darko, The Room, and El Topo cover artwork' }
 };
 let activeShot = 'collection';
 const tabs = [...document.querySelectorAll('[data-shot]')];
